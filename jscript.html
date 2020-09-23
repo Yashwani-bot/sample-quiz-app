@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="home-box custom-box ">
+	<h3><center>JavaScript Quiz Instruction:</center></h3>
+	<p>Total number of questions<spam class="total-question"></spam></p>
+	<p>The quizzes consists of questions carefully designed to help you self-assess your comprehension of the information presented on the topics JavaScript. No data will be collected on the website regarding your responses or how many times you take the quiz.</p>
+
+	<p>	Each question in the quiz is of multiple-choice or "true or false" format. Read each question carefully, and click on the button next to your response that is based on the information covered on the topic in the module. Each correct or incorrect response will result in appropriate feedback immediately at the bottom of the screen.</p>
+		
+	<p>	After responding to a question, click on the "Next Question" button at the bottom to go to the next question. </p>
+		
+	<p>If you select an incorrect response for a question, you can  get the correct answer. If you retake the quiz, the questions and their respective responses will be randomized.</p>
+		
+	<p>The total score for the quiz is based on your responses to all questions. If you respond incorrectly to a question  and get the correct response, your quiz score will reflect it appropriately. </p>
+	<button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+</div>
+<div class="quiz-box custom-box hide">
+	<div class="question-number">
+		
+	</div>
+	<div class="question-text">
+		
+	</div>
+	<div class="option-container">
+	
+
+	</div>
+	<div class="next-question-btn">
+		<button type="button" class="btn" onclick="next()">Next</button>
+		
+	</div>
+	<div class="answers-indicator">
+		
+	</div>
+
+</div>
+<div  class="result-box custom-box hide">
+	<h1>Quiz Result</h1>
+	<table>
+		<tr>
+			<td>Total Question</td>
+			<td><span class="total-question"></span></td>
+		</tr>
+		<tr>
+			<td>Attempt</td>
+			<td><span class="total-attempt"></span></td>
+		</tr>
+		<tr>
+			<td>Correct</td>
+			<td><span class="total-correct"></span></td>
+		</tr>
+		<tr>
+			<td>Wrong</td>
+			<td><span class="total-wrong"></span></td>
+		</tr>
+		<tr>
+			<td>Percentage</td>
+			<td><span class="percentage"></span></td>
+		</tr>
+		<tr>
+			<td>Your Total Score</td>
+			<td><span class="total-score"></span></td>
+		</tr>
+	</table>
+	<button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+	<a href="JSHome.html"><button type="button" class="btn" >Go To Home</button></a>
+</div>
+
+<script src="questionJS.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
+
